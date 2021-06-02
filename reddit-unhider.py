@@ -27,8 +27,8 @@ while not no_more:
 		if int(post.created_utc) >= time_cutoff:
 			after = post.name
 			continue
-		print "Unhiding [%s] ... " % post.title
+		print("Unhiding [%s] ... " % post.title)
 		post.unhide()
 		num_hidden += 1
 
-print "\n%d posts unhidden!" % num_hidden
+print("\n%d posts unhidden!" % num_hidden)
